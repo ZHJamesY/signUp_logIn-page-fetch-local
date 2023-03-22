@@ -11,7 +11,6 @@ let promise = new Promise(function(resolve, reject){
         for (let i = 1; i < accounts.length; i++) 
         {
             let account = accounts[i].split(",");
-            console.log(account)
             for(let j = 0; j < keys.length; j++)
             {
                 let key = keys[j];
@@ -65,7 +64,7 @@ function LogIn(accounts)
         }
         else if(username != "" && password != "")
         {
-            window.open("../index.html");
+            window.location.assign("../index.html");
         }
     });
 }
@@ -100,7 +99,7 @@ function SignUp(accounts)
         }
         else if(email != "" && username != "" && password == repeatPassword)
         {
-            window.open("../index.html");
+            window.location.assign("../index.html");
         }
     });
 }
