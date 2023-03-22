@@ -50,7 +50,7 @@ function LogIn(accounts)
     $("#log_in_button").on("click", function(){
         let username = $('#Lusername').val();
         let password = $('#Lpassword').val();
-        console.log(accounts)
+
         if((!accounts.username.includes(username) && username != "" && password != ""))
         {
             alert("Username/Password incorrect")
@@ -77,7 +77,7 @@ function SignUp(accounts)
         let username = $('#Susername').val();
         let password = $('#Spassword').val();
         let repeatPassword = $('#Srepeat_password').val();
-        alert(email)
+
         if(!email.includes("@") && email != "")
         {
             alert("Invalid email")
